@@ -1,0 +1,41 @@
+*{
+  padding:0;
+  margin:0;
+}
+main {
+  width:600px;
+  margin:0 auto;
+}
+
+h1{
+  text-align: center;
+  margin:100px 0;
+}
+
+ul{
+  list-style: none;
+  display:grid;
+  grid-template-columns: minmax(150px, 1fr);
+  grid-auto-columns: minmax(150px, 1fr);
+  grid-template-rows: 25vh;
+  grid-auto-rows: 25vh;
+  grid-auto-flow: column;
+  overflow: scroll;
+  grid-gap: 50px;
+  align-self: center;
+  }
+
+ul li{
+  background-color: black;
+  grid-column: span 2 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 120px;
+  }

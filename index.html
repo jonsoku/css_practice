@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advanced CSS4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <main>
+        <h1>LEEJONGSEOK CSS</h1>
+        <section>
+            <ul>
+
+            </ul>
+        </section>
+    </main>
+
+
+<script>
+    const ul = document.querySelector('ul');
+    const length = 15;
+
+    for(let i = 1 ; i <= length ; i++){
+        const li = document.createElement('li');
+        ul.appendChild(li);
+        li.innerHTML = `<a href="practiceProjects/${i}">PROJECT ${i}</a>`;
+    }
+
+</script>
+</body>
+
+</html>
